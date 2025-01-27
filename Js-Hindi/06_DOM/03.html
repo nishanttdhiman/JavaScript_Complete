@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM3</title>
+</head>
+<body style="background-color: #212121 ;color: #ffff";>
+    
+</body>
+<script>
+    const divv=document.createElement('div');
+    console.log(divv);
+    
+    divv.className="main"
+    divv.id=Math.round(Math.random()*10+1);
+    divv.setAttribute("title","generated title");
+    divv.style.padding="12px"
+    divv.style.background="green";
+    const addText=document.createTextNode('Chai aur code')
+    divv.appendChild(addText)
+    document.body.appendChild(divv)
+    // console.log(divv);
+</script>
+</html>
